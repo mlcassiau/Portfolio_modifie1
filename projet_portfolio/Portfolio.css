@@ -1,0 +1,149 @@
+    body
+    {
+        background-color: whitesmoke;
+        text-align: center;
+        color:darkcyan;
+    }
+    #conteneur
+    {
+        display: flex;
+        flex-wrap:wrap;
+        align-items:center;
+        background-image:linear-gradient(gainsboro,whitesmoke);
+
+    }
+    .element1
+    {
+        width:100%;
+
+    }
+    .element2
+    {
+        padding: 2%;
+        width:20%;
+    }
+    .element2 img
+    {
+        box-shadow: 5px 5px 5px darkgrey;
+        border-radius: 20px;
+        width:50%
+    }
+    ul
+    {
+         list-style-type:none;
+        padding-left:2%;
+    }
+    .element3
+    {
+        margin-left:10%;
+        width:50%; 
+    }
+    a
+    {
+         text-decoration: none;
+         color:darkcyan;
+    }
+    a:focus
+    {
+        color:darkcyan;
+    }
+
+    article h4
+    {
+        border:1px darkcyan solid;
+        border-radius:10px;
+        background-color: gainsboro;
+        padding:10px;
+
+    }
+    #conteneur2
+    {
+        display:flex;
+        flex-direction:column;
+        width:80%;
+        margin:auto;
+
+    }
+    #Moirans,#CV,#Autre
+    {
+        border:1px darkcyan solid;
+        border-radius:10px;
+        padding:3%px;
+        margin-bottom: 3%;
+    }
+     #Moirans img,#CV img,#Autre img
+    {
+        width:80%;
+    }
+@media all and (max-width:480px)
+{
+    .element2
+    {
+        width:100%;
+    }
+
+.element2 img
+{
+   display:none;
+}
+
+.element3
+{
+   display: none;
+}
+
+#Moirans img,#CV img,#Autre img
+    {
+        width:70%;
+    }
+    
+}
+@media all and (min-width:480px) and (max-width:800px)
+{
+
+
+.element1
+{
+    width:100%;
+   
+}
+.element2
+{
+    padding: 2%;
+    width:30%;
+  
+}
+
+.element3
+{
+    width:20%;
+    margin-left:10%;
+    height:100%;
+}
+a
+{
+     text-decoration: none;
+     color:darkcyan;
+}
+a:focus
+{
+    color:darkcyan;
+}
+
+#conteneur2
+{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    margin:auto;
+    
+}
+
+    #Moirans img,#CV img,#Autre img
+    {
+        width:70%;
+    }
+        
+}
+
+

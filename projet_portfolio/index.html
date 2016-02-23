@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Portfolio.css" type="text/css" charset="utf-8">
+		<!--[if lt IE 9]>
+		<script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script>
+		<![endif]-->
+		<title>Portfolio </title>		
+	</head>
+	
+    <body>
+    <!--Comme on utilise la flexbox on met en place le container principal-->
+        <div id="conteneur">
+    <!-- L'entête avec le titre est le premier élémentde la flexbox-->
+    
+            <header class="element1">
+                <h1>Objectif:Intégrateur web</h1>
+                <h2>Portfolio de mes projets web... </h2>
+            </header>
+    <!-- La partie avec le nom et les coordonnées qui seront sur le côté,correspond au deuxième élément de la flexbox -->
+            <aside class="element2">
+                <a href="photo.jpg" ><img src="photo_mini.jpg" alt="ma photo"></br></a>
+                <h4>Mes coordonées:</h4>
+                <ul>
+                    <li>711 chemin de la Burletière</br>
+                        38960 Saint Etienne de Crossey </li>
+                    <li>mlcassiau@yahoo.fr</li>
+                    <li>0664992079</li>
+                </ul>
+            </aside>
+    <!-- La partie menu qui comporte les projets, correspond au troisième élément flexbox-->
+            <article class="element3" >
+      
+            <!-- Le menu avec accès rapide grâce aux ancres-->
+                <p id="menu">
+                    <a href="#Moirans"><h4>Site internet du triathlon de Moirans ( encours)</h4></a>
+                    <a href="#CV"><h4>Mon CV en ligne</h4></a>
+                    <a href="#Autre"><h4>Le site de quelqu'un d'autre pour étoffer</h4></a>
+                </p>
+            </article>
+        <!-- fin du container-->
+        </div>
+        <section>
+            <p> Voici quelques exemples de ce que je peux faire...</p>
+             <!-- On crée un nouveau conteneur pour la mise en forme--> 
+            <div id="conteneur2">
+                <!-- Le 1er projet-->
+                <article id="Moirans">
+                    <h3>Le projet du site de Trialp Moirans</h3>
+                    <p>Ce projet n'a débuté que récemment. Il consiste à reconstruire le site entièrement, pour lui donner un coup de jeune...
+                    C'est parfait pour appprendre à utiliser Bootstrap, mais ce site est en cours de construction, voici le début, avec une fenêtre modale pour expliquer ce qu'est le triathlon:</p>
+                    <img src="trialp.PNG" alt="entête du site de trialp">
+                </article>
+                <!-- Le deuxième projet-->
+                <article id="CV">
+                    <h3>Mon CV en ligne</h3>
+                    <p> Ce projet a débuté en décembre 2015 et a duré quelques jours. Il a été fait en exercice pour OpenClasrooms.
+                    Je ne l'ai jamais mis en ligne, je ne suis pas satisfaite de l'esthétique, je le referai quand j'aurai fini la formation intégrateur web...</p>
+
+                    <img src="CV.png" alt="cv">
+                </article>
+                <!--Le troisième projet-->
+                <article id="Autre">
+                    <h3>Le site de ma soeur</h3>
+                    <p> Ce site a été fait par mon cousin . Comme ça je fais de la pub pour ma soeur...</p>
+                    <a href="http://solineb-création.com/"><img src="soline.png" alt="site de bijouterie"></a> </br>
+                </article>
+            </div>                
+        </section>
+    </body>
+</html>
+
