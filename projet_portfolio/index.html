@@ -17,30 +17,33 @@
     
             <header class="element1">
                 <h1>Objectif : Intégrateur web</h1>
-                <h2>Portfolio de mes projets web... </h2>
+                <h2>Portfolio de mes projets web  ... </h2>
+                <p>réalisé uniquement en HTML5/CSS3 et avec des flexbox</p>
             </header>
     <!-- La partie avec le nom et les coordonnées qui seront sur le côté,correspond au deuxième élément de la flexbox -->
             <aside class="element2">
-                <a href="photo.jpg" ><img src="photo_mini.jpg" alt="ma photo"></br></a>
+                <img src="photo_moi.jpg" alt="ma photo"><br/>
                 <h4>Mes coordonées:</h4>
                 <ul>
-                    <li>711 chemin de la Burletière</br>
+                    <li>711 chemin de la Burletière<br/>
                         38960 Saint Etienne de Crossey </li>
                     <li>mlcassiau@yahoo.fr</li>
                     <li>0664992079</li>
                 </ul>
             </aside>
     <!-- La partie menu qui comporte les projets, correspond au troisième élément flexbox-->
+            <div class="element4">
             <article class="element3" >
       
             <!-- Le menu avec accès rapide grâce aux ancres-->
                 <p id="menu">
+                    <a href="#CV"><h4> Pour accéder à mon cv, c'est ici !</h4></a>
                     <a href="#Moirans"><h4>Site internet du triathlon de Moirans ( encours)</h4></a>
-                    <a href="#CV"><h4>Mon CV en ligne</h4></a>
-                    <a href="#Autre"><h4>Le site de quelqu'un d'autre pour étoffer</h4></a>
-                    <a href="index_CV.html"><h4> Pour accéder à mon cv, c'est ici !</h4></a>
+                    <a href="#Ville"><h4>Le site du village de Saint Etienne de Crossey</h4></a>
+                    
                 </p>
             </article>
+            </div>
         <!-- fin du container-->
         </div>
         <section>
@@ -48,25 +51,26 @@
              <!-- On crée un nouveau conteneur pour la mise en forme--> 
             <div id="conteneur2">
                 <!-- Le 1er projet-->
-                <article id="Moirans">
-                    <h3>Le projet du site de Trialp Moirans</h3>
-                    <p>Ce projet n'a débuté que récemment. Il consiste à reconstruire le site entièrement, pour lui donner un coup de jeune...
-                    C'est parfait pour appprendre à utiliser Bootstrap, mais ce site est en cours de construction, voici le début, avec une fenêtre modale pour expliquer ce qu'est le triathlon:</p>
-                    <img src="trialp.PNG" alt="entête du site de trialp">
-                </article>
-                <!-- Le deuxième projet-->
                 <article id="CV">
                     <h3>Mon CV en ligne</h3>
-                    <p> Ce projet a débuté en décembre 2015 et a duré quelques jours. Il a été fait en exercice pour OpenClasrooms.
-                    Je ne l'ai jamais mis en ligne, je ne suis pas satisfaite de l'esthétique, je le referai quand j'aurai fini la formation intégrateur web...</p>
-
-                    <img src="CV.png" alt="cv">
+                    <p>Réalisé avec Bootstrap, vous pouvez cliquer sur l'image pour entrer dans le site</p>
+                    <a href="index_CV.html" alt="lien vers mon cv"><img src="CV.jpg" alt="photo de mon cv"></a>
                 </article>
+               
+                <!-- Le deuxième projet-->
+                 <article id="Moirans">
+                    <h3>Le projet du site de Trialp Moirans</h3>
+                    <p>Ce projet n'a débuté que récemment. Il consiste à reconstruire le site entièrement, pour lui donner un coup de jeune...
+                    C'est parfait pour appprendre à utiliser Bootstrap, mais ce site est en cours de construction, voici les deux premières pages:</p>
+                    <img src="Trialp_index.JPG" alt="Future premiere page de trialp Moirans">
+                    <img src="Trialp_page2.JPG" alt="Trialp Moirans page2">
+                </article>
+
+                   
                 <!--Le troisième projet-->
-                <article id="Autre">
-                    <h3>Le site de ma soeur</h3>
-                    <p> Ce site a été fait par mon cousin . Comme ça je fais de la pub pour ma soeur...</p>
-                    <a href="http://solineb-création.com/"><img src="soline.png" alt="site de bijouterie"></a> </br>
+                <article id="Ville">
+                    <h3>Le site du village de Saint Etienne de Crossey</h3>
+                    <p> Ce site est en cours, c'est un projet OpenClassrooms... A visiter dans quelques jours, j'espère.</p> 
                 </article>
             </div>                
         </section>

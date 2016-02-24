@@ -25,18 +25,27 @@
     .element2 img
     {
         box-shadow: 5px 5px 5px darkgrey;
-        border-radius: 20px;
+        border-radius: 30px;
         width:50%
+       
     }
     ul
     {
          list-style-type:none;
         padding-left:2%;
     }
+.element4
+{
+    background-color: darkcyan;
+    border-radius:20px;
+    width:60%;
+    height:300px;
+}
     .element3
     {
-        margin-left:10%;
+        margin:auto;
         width:50%; 
+        margin-top: 60px;
     }
     a
     {
@@ -64,16 +73,20 @@
         margin:auto;
 
     }
-    #Moirans,#CV,#Autre
+    #Moirans,#CV,#Ville
     {
         border:1px darkcyan solid;
-        border-radius:10px;
+        border-radius:20px;
         padding:3%px;
         margin-bottom: 3%;
     }
-     #Moirans img,#CV img,#Autre img
+     #Moirans img,#CV img,#Ville img
     {
         width:80%;
+        box-shadow:5px 5px 5px darkcyan; 
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 @media all and (max-width:480px)
 {
@@ -91,10 +104,14 @@
 {
    display: none;
 }
-
+.element4
+{
+        display:none;
+ }
 #Moirans img,#CV img,#Autre img
     {
         width:70%;
+        
     }
     
 }
@@ -116,10 +133,15 @@
 
 .element3
 {
-    width:20%;
-    margin-left:10%;
+    width:70%;
+    margin:auto;
     height:100%;
+    margin-top:45px;
+    
 }
+    .element4{
+       width:50%;
+    }
 a
 {
      text-decoration: none;
