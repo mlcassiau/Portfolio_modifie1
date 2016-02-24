@@ -27,7 +27,7 @@
               
               <!-- Barre de navigation--
 ============================================-->
-              <div class="navbar navbar-inverse nav-fixed-top " role="navigation" >
+              <div class="navbar navbar-inverse navbar-fixed-top " role="navigation" >
                    <div class="container-fluid" id="barre">
                       
                             <div class="navbar-header">
@@ -39,7 +39,7 @@
                                   </button>
 
 
-                            <a class="navbar-brand" href="#page-top"><h4> Marie-Laure Cassiau</h4></a>  
+                            <a class="navbar-brand" href="#Etat_Civil"><h4> Marie-Laure Cassiau</h4></a>  
 
                     </div> 
                   </div>
@@ -49,7 +49,7 @@
                         <li class="hidden"><a href="#page-top"></a></li>
                         <li ><a href="#Formation"><h4>Formation</h4></a></li>
                         <li ><a href="#Connaissances"><h4>Connaissances</h4></a></li>
-                        <li ><a href="#Experiences"><h4>Expériences professionnelles</h4></a></li>
+                        <li ><a href="#Experiences"><h4>Expériences </h4></a></li>
                         <li ><a href="#Competences"><h4>Competence</h4></a></li>
                         <li ><a href="#C_I"><h4>Centres d'intérêts</h4></a></li>
                     
@@ -62,6 +62,18 @@
       </header>
       
        </body>
+          <section class="jumbotron col-sm-10 col-sm-offset-1" id="Etat_Civil">
+                <h1>Etat Civil</h1>
+                <p> 36 ans,Mariée, 2 enfants</p>
+                <p> <u>Coordonnées</u>:</p>
+                <ul>
+                    <li> 711 Chemin de la Burletière 38960 Saint Etienne de Crossey </li>
+                    <li> Téléphone: 06/64/99/20/79 </li>
+                    <li>Mail: mlcassiau@yahoo.fr </li>
+              </ul>
+
+          </section>
+
         <section class="jumbotron col-sm-10 col-sm-offset-1" id="Formation">
             <h1>Formation</h1>
             <ul>
@@ -88,7 +100,7 @@
       </section>
       <section class="jumbotron col-sm-10 col-sm-offset-1" id="Experiences">
           <h1>Expériences </h1>
-          <p>En entreprises:</p>
+          <p>Professionnelles:</p>
           
           <ul>
               <li><u><b>Conseillère commerciale, banque/assurance</b></u>: Bilans Epargne/Assurances, Crédits immobiliers,... </li><br>
@@ -96,7 +108,7 @@
               <li><u><b>Télé-assistante, banque/assurance</b></u>: Campagnes d'appels sortants, Appels entrants, opérations bancaires de base</li><br>
               <li><u><b>Ingénieur Stagiaire, CEA :</b></u> Etude de l'influence des paramètres biologiques sur les signaux de fluorescence des biopuces à ADN </li>
           </ul>
-          <p>Sur les sites web: voir le <a href="index.html" alt=" mon portfolio">portfolio</a></p>
+          <p>Conception de sites web: voir le <a href="index.html" alt=" mon portfolio">portfolio</a></p>
       </section>
       <section class="jumbotron col-sm-10 col-sm-offset-1" id="Competences">
           <h1>Compétences </h1>
@@ -111,9 +123,31 @@
 
           </ul> 
       </section>
-      
+       <section class="jumbotron col-sm-10 col-sm-offset-1" id="C_I">
+          <h1>Centres d'intérêts </h1>
+          
+          <ul>
+              <li>Voyages: Boston, Irelande, Islande, New york, Italie </li>
+              <li>Créations de vêtements pour les enfants  </li>
+              <li>Cuisine ...</li>
+              
+
+          </ul> 
+      </section>
        <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Javascript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script> // Scrollspy fluide
+      $(function () {
+        $('header a').on('click', function(e) {
+          e.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+          }, 1000, function(){
+            window.location.hash = hash;
+          });
+        });
+      });</script>
  
