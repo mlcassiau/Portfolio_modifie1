@@ -11,18 +11,20 @@
 	</head>
 	
     <body>
-    <!--Comme on utilise la flexbox on met en place le container principal-->
-        <div id="conteneur">
-    <!-- L'entête avec le titre est le premier élémentde la flexbox-->
+   
+    <!-- L'entête avec le titre -->
     
             <header class="element1">
-                <h1>Objectif : Intégrateur web</h1>
+                <h1>Objectif :Développeur web</h1>
                 <h2>Portfolio de mes projets web  ... </h2>
                 <p>réalisé uniquement en HTML5/CSS3 et avec des flexbox</p>
             </header>
+         <!--Comme on utilise la flexbox on met en place le container principal-->
+        <div id="conteneur">
     <!-- La partie avec le nom et les coordonnées qui seront sur le côté,correspond au deuxième élément de la flexbox -->
             <aside class="element2">
-                <img src="photo_moi.jpg" alt="ma photo"><br/>
+                <h3>Marie-Laure Cassiau</h3>
+                <img src="Photo_moi.jpg" alt="ma photo"><br/>
                 <h4>Mes coordonées:</h4>
                 <ul>
                     <li>711 chemin de la Burletière<br/>
@@ -32,18 +34,20 @@
                 </ul>
             </aside>
     <!-- La partie menu qui comporte les projets, correspond au troisième élément flexbox-->
-            <div class="element4">
+            
             <article class="element3" >
+                <div class="conteneur1">
       
             <!-- Le menu avec accès rapide grâce aux ancres-->
-                <p id="menu">
-                    <a href="#CV"><h4> Pour accéder à mon cv, c'est ici !</h4></a>
-                    <a href="#Moirans"><h4>Site internet du triathlon de Moirans ( encours)</h4></a>
-                    <a href="#Ville"><h4>Le site du village de Saint Etienne de Crossey</h4></a>
+                <p >
+                    <a href="#CV"><h4 > Pour accéder à mon cv, c'est ici !</h4></a>
+                    <a href="#Moirans"><h4 >Site internet du triathlon de Moirans ( encours)</h4></a>
+                    <a href="#Ville"><h4 >Le site du village de Saint Etienne de Crossey</h4></a>
                     
                 </p>
+                     </div>
             </article>
-            </div>
+           
         <!-- fin du container-->
         </div>
         <section>
@@ -60,7 +64,7 @@
                 <!-- Le deuxième projet-->
                  <article id="Moirans">
                     <h3>Le projet du site de Trialp Moirans</h3>
-                    <p>Ce projet n'a débuté que récemment. Il consiste à reconstruire le site entièrement, pour lui donner un coup de jeune...
+                    <p>Ce projet n'a débuté que récemment.<br/> Il consiste à reconstruire le site entièrement, pour lui donner un coup de jeune...<br/>
                     C'est parfait pour appprendre à utiliser Bootstrap, mais ce site est en cours de construction, voici les deux premières pages:</p>
                     <img src="Trialp_index.JPG" alt="Future premiere page de trialp Moirans">
                     <img src="Trialp_page2.JPG" alt="Trialp Moirans page2">
@@ -71,6 +75,8 @@
                 <article id="Ville">
                     <h3>Le site du village de Saint Etienne de Crossey</h3>
                     <p> Ce site est en cours, c'est un projet OpenClassrooms... A visiter dans quelques jours, j'espère.</p> 
+                    <img src="Crossey_1.JPG" alt="Projet site web Crossey">
+                    <img src="Crossey_2.JPG" alt="Projet site web Crossey">
                 </article>
             </div>                
         </section>

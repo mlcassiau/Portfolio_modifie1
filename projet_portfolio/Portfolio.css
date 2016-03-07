@@ -3,53 +3,60 @@
         background-color: whitesmoke;
         text-align: center;
         color:darkcyan;
-    }
-    #conteneur
-    {
-        display: flex;
-        -webkit-display:flex;
-        flex-wrap:wrap;
-        align-items:center
-            -webkit-align-items:center;
         background-image:linear-gradient(gainsboro,whitesmoke);
-
+        
     }
-    .element1
+ .element1
     {
         width:100%;
+        margin:auto;
+        margin-bottom: 30px;
 
     }
-    .element2
+/*=======================Premier Conteneur Flexbox: pavé coordonnées et pavé menu================================*/
+    #conteneur
     {
-        padding: 2%;
-        width:20%;
+       display: flex;
+       display: -webkit-flex;
+       -webkit-flex-flow:row wrap;
+       flex-flow:row wrap;
+        justify-content: space-around;
+       -webkit-justify-content: space-around;
+        align-items: center;
+        -webkit-align-items:center;
+        
     }
-    .element2 img
+   
+    .element2/*Pavé Coordonnées*/
+    {
+        padding: 3%;
+       width:20%;
+        background-color: darkcyan;
+        border-radius:20px;
+        color:gainsboro;
+        
+    }
+    .element2 img/*Photo de moi*/
     {
         box-shadow: 5px 5px 5px darkgrey;
-        border-radius: 30px;
-        width:50%
+        border-radius: 20px;
+        width:50%;
+        color:gainsboro;
        
     }
-    ul
+    ul/*Coordonnées*/
     {
          list-style-type:none;
         padding-left:2%;
     }
-.element4
-{
-    background-color: darkcyan;
-    border-radius:20px;
-    width:60%;
-    height:300px;
-}
-    .element3
-    {
-        margin:auto;
-        width:50%; 
-        margin-top: 60px;
-    }
-    a
+    .element3/* Menu*/
+    { 
+        background-color: darkcyan;
+        border-radius:20px;  
+       width:60%;      
+
+     }
+    a/*liens du menu*/
     {
          text-decoration: none;
          color:darkcyan;
@@ -59,31 +66,62 @@
         color:darkcyan;
     }
 
-    article h4
+   article h4/*éléments du menu*/
     {
         border:1px darkcyan solid;
         border-radius:10px;
         background-color: gainsboro;
-        padding:10px;
-
+        padding:15px;
+        width: 350px;
+        
+        
     }
-    #conteneur2
+
+    .conteneur1/*Conteneur contenant le menu*/
     {
         display:flex;
-        -webkit-display:flex;
+        display:-webkit-flex;
         flex-direction:column;
-        width:80%;
-        margin:auto;
-
+        flex-direction: -webkit-column;
+        justify-content: space-around;
+        -webkit-justify-content:space-around;
+        align-items: center;
+        -webkit-align-items:center;      
+       
     }
-    #Moirans,#CV,#Ville
+    /* Contenu du conteneur 2 de la flexbox, le corps qui contient les projets*/
+    #conteneur2
+    {
+        display:-webkit-flex;
+        display:flex;
+        flex-direction: -webkit-column;
+        flex-direction: column;
+
+        border-radius:20px;
+        width:95%;
+        margin:auto;
+        justify-content: space-around;
+         -webkit-justify-content:space-around;
+    }
+
+    h3 p 
+    {
+        padding:10%;
+    }
+
+    #Moirans,#CV,#Ville/*les projets*/
     {
         border:1px darkcyan solid;
         border-radius:20px;
-        padding:3%px;
-        margin-bottom: 3%;
+        align-items:stretch;
+        margin-top: 30px;
+        background-color: darkcyan;
+        color:gainsboro;
+       
+       
     }
-     #Moirans img,#CV img,#Ville img
+
+     #Moirans img,#CV img,#Ville img /*les images des projets*/
     {
         width:80%;
         box-shadow:5px 5px 5px darkcyan; 
@@ -136,14 +174,18 @@
 
 .element3
 {
-    width:70%;
-    margin:auto;
-    height:100%;
-    margin-top:45px;
+    width:60%;
     
 }
-    .element4{
-       width:50%;
+article h4/*éléments du menu*/
+    {
+        border:1px darkcyan solid;
+        border-radius:10px;
+        background-color: gainsboro;
+        padding:15px;
+        width: 200px;
+        margin:auto;
+        
     }
 a
 {
@@ -154,16 +196,7 @@ a:focus
 {
     color:darkcyan;
 }
-
-#conteneur2
-{
-    display:flex;
-    -webkit-display:flex;
-    flex-direction:column;
-    width:80%;
-    margin:auto;
-    
-}
+  
 
     #Moirans img,#CV img,#Autre img
     {
