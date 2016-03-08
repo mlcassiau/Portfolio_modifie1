@@ -3,6 +3,7 @@ body
     background-image: url("fond_ecran_CV.JPG");
     background-attachment: fixed;
     background-repeat: no-repeat;
+   ; 
     
 }
 /* Décalage du texte dans le menu*/
@@ -34,6 +35,7 @@ section h1
 section
 {
     font-size:1em;
+    
 }
 section p
 {
